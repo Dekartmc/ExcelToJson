@@ -84,6 +84,16 @@ export default function Home(props) {
         </div>
       </div>
 
+      {/* BUY ME A PIZZA AND HELP SUPPORT OPEN-SOURCE RESOURCES */}
+      <div class="flex items-end justify-end fixed bottom-0 right-0 mb-4 mr-4 z-10">
+        <div>
+          <a title="Buy me a pizza" href="https://www.buymeacoffee.com/Dekartmc" target="_blank" rel="noopener noreferrer"
+            class="block w-16 h-16 rounded-full transition-all shadow hover:shadow-lg transform hover:scale-110 hover:rotate-12">
+            <img class="object-cover object-center w-full h-full rounded-full" src="https://img.icons8.com/emoji/48/000000/pizza-emoji.png" alt="" />
+          </a>
+        </div>
+      </div>
+
     </div>
 
   );
