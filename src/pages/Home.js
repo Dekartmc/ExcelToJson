@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import xlsx from 'xlsx';
 
-/* Components */
+import Logo from "../assets/img/Michael Flores Logo 600.png"
 
 export default function Home(props) {
 
@@ -31,6 +31,22 @@ export default function Home(props) {
   return (
 
     <div className="w-full">
+      <div class="top h-64 w-full bg-blue-600 overflow-hidden relative" >
+        <img
+          alt=""
+          class="bg w-full h-full object-cover object-center absolute z-0"
+          src="https://images.unsplash.com/photo-1503264116251-35a269479413?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" />
+        <div class="flex flex-col justify-center items-center relative h-full bg-black bg-opacity-50 text-white">
+          <img
+            alt=""
+            src={Logo}
+            class="h-24 w-24 object-cover" />
+          <h1 class="text-2xl font-semibold">Convert Excel (xlsx) to Json</h1>
+          <h2 class="text-sm font-semibold">
+            <a href="https://michaelfs.com">www.michaelfs.com</a>
+          </h2>
+        </div>
+      </div>
       <div className="flex items-center justify-center">
         <div className="container mx-24 bg-white rounded shadow-lg">
           <div className="px-12 py-6">
@@ -67,6 +83,7 @@ export default function Home(props) {
           </div>
         </div>
       </div>
+
     </div>
 
   );
